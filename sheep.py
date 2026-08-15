@@ -9,4 +9,4 @@ def count_sheep(n):
 
     print(y)
 
-count_sheep(3)
+count_sheep(2)
