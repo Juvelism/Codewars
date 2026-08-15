@@ -1,4 +1,4 @@
 
 for x in 'Python':
     if x in 'aeiou':
-        print(x)
+        print(f'The vowels is letter {x.upper()}')
