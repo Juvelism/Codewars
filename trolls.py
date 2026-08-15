@@ -1,2 +1,12 @@
 def disemvowel(string_):
-    return string_
+
+    vowels = "aeiou"
+
+
+    for i in vowels:
+        if i in string_:
+            print('TRUE')
+
+    #return string_
+
+disemvowel('Yes')
