@@ -1,0 +1,4 @@
+def sum_two_smallest_numbers(numbers):
+
+    
+    return 0
