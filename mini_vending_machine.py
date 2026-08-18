@@ -11,6 +11,10 @@ print("=== COFFEE MENU ===\n")
 for menu in coffee_menu:
     print(f'{menu["name"]} - {menu["price"]}')
 
-coffee_name = input("\nChoose Coffee: ")
+customer_choice = input("\nChoose Coffee: ").title()
 
-print(coffee_menu['name']['price'])
+print(f"\nYou selected: {customer_choice}")
+
+for price in coffee_menu:
+    if price['name'] == customer_choice:
+        print(f"Price: {price['price']}")
