@@ -7,10 +7,10 @@ coffee_menu = [
 
 print("=== COFFEE MENU ===\n")
 
+# VIEW OF MENU
 for menu in coffee_menu:
     print(f'{menu["name"]} - {menu["price"]}')
 
 coffee_name = input("\nChoose Coffee: ")
 
-print(f'You selected: {coffee_name.title()}')
-print(f'Price: P{coffee_menu["price"]}')
+print(coffee_menu['name']['price'])
