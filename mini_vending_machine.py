@@ -15,4 +15,5 @@ customer_choice = input("\nChoose Coffee: ").title()
 print(f"\nYou selected: {customer_choice}")
 
 for coffee in coffee_menu:
-    print(coffee)
+    if customer_choice == coffee['name']:
+        print(coffee['name'])
