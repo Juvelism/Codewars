@@ -5,7 +5,5 @@ coffee_menu = [
 ]
 
 
-user_input = input("What: ")
-
 for i in coffee_menu:
-    print(i['name'], i['price'])
+
