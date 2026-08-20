@@ -14,6 +14,8 @@ for menu in coffee_menu:
 customer_choice = input("\nChoose Coffee: ").title()
 print(f"\nYou selected: {customer_choice}")
 
+coffee__found = False
+coffee_out_stock = False
+
 for coffee in coffee_menu:
-    if customer_choice == coffee['name']:
-        print(coffee['name'])
+    if 
