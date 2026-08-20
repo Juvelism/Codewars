@@ -1,20 +1,21 @@
 coffee_menu = [
     {"name": "Espresso", "price": 50, "stock": 5},
-    {"name": "Latte", "price": 70, "stock": 0},
+    {"name": "Latte", "price": 70, "stock": 3},
     {"name": "Cappuccino", "price": 80, "stock": 2}
 ]
 
 
 print("=== COFFEE MENU ===\n")
 
-# DISPLAY COFFEE MENU
 for menu in coffee_menu:
     print(f'{menu["name"]} - P{menu["price"]}')
 
-customer_choice = input("\nChoose Coffee: ").title()
-print(f"\nYou selected: {customer_choice}")
+customer_chooses = input("\nChoose Coffee: ").title()
+
+coffee_found = False
 
 for coffee in coffee_menu:
-    if customer_choice == coffee['name']:
-        print(coffee['name'])
-
+    if coffee['name'] == customer_chooses:
+        pass
+    else:
+        pass
