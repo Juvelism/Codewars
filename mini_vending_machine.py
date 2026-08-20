@@ -8,9 +8,16 @@ coffee_menu = [
 print("=== COFFEE MENU ===\n")
 
 for menu in coffee_menu:
-    print(f'{menu["name"]} - {menu["price"]}')
+    print(f'{menu["name"]} - P{menu["price"]}')
 
-coffee_name = input("\nChoose Coffee: ")
+customer_chooses = input("\nChoose Coffee: ").title()
 
-print(f'You selected: {coffee_name.title()}')
-print(f'Price: P{coffee_menu["price"]}')
+coffee_found = False
+
+for coffee in coffee_menu:
+    if coffee['name'] == customer_chooses:
+        coffee_found = True
+        print(coffee['name'])
+    else:
+        print("Coffe not found")
+        coffee_found = False
