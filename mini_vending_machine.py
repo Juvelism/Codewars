@@ -14,6 +14,9 @@ customer_chooses = input("\nChoose Coffee: ").title()
 
 coffee_found = []
 
+coffee__found = False
+coffee_out_stock = False
+
 for coffee in coffee_menu:
     if coffee['name'] == customer_chooses:
         coffee_found.append(coffee)
