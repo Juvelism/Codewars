@@ -12,10 +12,10 @@ for menu in coffee_menu:
 
 customer_chooses = input("\nChoose Coffee: ").title()
 
-coffee_found = False
+coffee_found = []
 
 for coffee in coffee_menu:
     if coffee['name'] == customer_chooses:
-        pass
-    else:
-        pass
+        coffee_found.append(coffee)
+
+print(coffee_found)
